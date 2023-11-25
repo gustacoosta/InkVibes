@@ -1,0 +1,426 @@
+/*Estilização geral do site*/
+body{
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Estilização da fonte do H1*/
+@font-face {
+    font-family: 'Moonbright';
+    src: url('fonts/MoonbrightDemo-1GGn2.ttf') format('truetype');
+}
+
+#titulo {
+    font-family: 'Moonbright';
+    font-size: 55px;
+    text-align: center;
+    margin: 0;
+    padding: 2%;
+}
+
+/*Estilização do HEADER da página*/
+header{
+    color: white;
+    background: #330852;
+    
+}
+
+/*Estilização do logotipo*/
+.logo{
+    width: 35%;
+}
+
+/*Estilização do NAV - Menu*/
+nav{
+    right: 0;
+    position: absolute;
+    top: 100px;
+
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 10px;
+
+}
+
+nav a{
+    text-transform: uppercase; 
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    color: #888788;
+    text-decoration: underline;
+}
+
+.logo_caixa{
+    width: 940px;
+    position: relative;
+    margin: auto;
+}
+
+/*Estilização do banner*/
+.banner{
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+}
+
+
+/*Estilização da section sobre a Ink Vibes*/
+
+.tatuador{
+    width: 30%;
+    float: left;
+}
+
+.t-ink{
+    clear: left;
+}
+
+.area-ink{
+    width: 940px;
+    text-align: justify;
+    margin: auto;
+    background-color: #FFFFFE;
+}
+
+p{
+    text-indent: 20px;
+}
+
+ /*Estilização da section Nosso estabelecimento (Mapa)*/
+
+.mapa{
+    text-align: center;
+    background: linear-gradient(#FFFFFE, #8852af);
+}
+
+/*Estilização da section Benefícios*/
+
+.beneficios{
+    background: linear-gradient(#8852af, #330852);
+}
+
+.cont-beneficios{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.lista-beneficios{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    padding-left: 28%;
+}
+
+.img_beneficios{
+    width: 160px;
+    box-shadow: 10px 10px 5px 0px black;
+    opacity: 1;
+    transition: 400ms;
+}
+
+.img_beneficios:hover{
+    opacity: 0.7;
+}
+
+.itens:before{
+    content: "⭐ ";
+}
+
+.itens:first-child{
+    font-weight: bold;
+}
+
+.itens{
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+.video{
+    background: linear-gradient(#330852, #26063d);
+    text-align: center;
+    margin: 0px;
+    padding: 3%;
+}
+
+/*Estilização logo Footer*/
+
+footer{
+    text-align: center;
+    background: url('assets/img/qPreto.png');
+    padding: 1%;
+}
+
+.copyright{
+    color: white;
+    font-size: 8px;
+}
+
+.logo_footer{
+    width: 150px;
+}
+
+/*Estilização dos componentes da section da página Tatuadores*/
+
+.pistola{
+    width: 40px;
+}
+
+.t_tatuador{
+    font-family: 'Moonbright';
+    font-size: 50px;
+    text-align: left;
+    margin: 0;
+    padding: 2%;
+}
+
+.div_tattoo{
+    width: 90%;
+    border-width: 2px;
+    border-style: solid; 
+    border-color:  #330852;
+    border-radius: 10px;
+    padding: px;
+    margin: 2.5%;
+    text-align: center;
+}
+
+#titulo-h3{
+    font-family: 'Moonbright';
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 2%;
+}
+.estilo_tattoo{
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.style_tattoo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div_tattoo:hover{
+    transform: scale(1.1);
+    border-color: #8852af;
+}
+
+.info{
+    text-align: center;
+}
+
+#obs{
+    font-size: 10px;
+    margin: 35px;
+}
+
+.prt{
+    font-size: 15px;
+}
+
+.prt1 {
+    font-size: 20px;
+    margin: 2px;
+}
+
+
+/*Estilização Login*/
+
+.mainLog{
+    background-color: #8852af;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.areaDados{
+    background-color: #b296c7;
+    width: 40%;
+    max-height: 60%;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    border-radius: 10px;
+    text-align: left;
+    margin: 35px;
+}
+
+.dadosLog{
+    border-radius: 5px;
+    width: auto;
+    right: 20%;
+}
+
+.bCad{
+    position: fixed;
+    background-color: #f50808;
+    color:#ffffff;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+}
+
+/*Estilização Contato*/
+
+form{
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+form label, form legend{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.input-padrao{
+    display: block;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    width: 98%;
+    padding: 1%;
+    min-width: 400px;
+}
+
+.enviar{
+    text-align: center;
+    font-size: 100%;
+    background: #8852af;
+    margin-top: 5px;
+    width: 30%;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: white;
+    padding: 2%;
+}
+
+.enviar:hover{
+    background: #a979ca;
+    scale: 1.05;
+}
+
+fieldset{
+    border-radius: 5px;
+}
+
+/*Estilização tela de Login*/
+
+
+.entrarCadLog{
+    text-align: center;
+    font-size: 100%;
+    background: #8852af;
+    margin-top: 5px;
+    margin-bottom: 5%;
+    width: 10%;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: white;
+    padding: 1%;
+}
+
+.entrarCadLog:hover{
+    background: #a979ca;
+    scale: 1.05;
+}
+
+.espaco{
+    margin-bottom: 10%;
+}
+
+/*Estilização Promoção*/
+
+.promocao{
+    background: url('assets/img/qPreto.png');
+    text-align: center;
+    height: 399px;
+}
+
+.img_promocao{
+    width: 180px;
+    margin-top: 5%;
+    border-radius: 7px;
+}
+
+.txt_promocao{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #8852af;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.preco_promocao{
+    color: #f50808;
+    font-size: 40px;
+}
+
+
+.novo_sabor{
+    text-align: right;
+    position: static;
+}
+
+
+/*Estilização pagina novoestilo*/
+
+.container_nestilo {
+    position: relative;
+    width: center;
+    height: auto; 
+    overflow: hidden;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.nestilo{
+    text-align: center;
+    height: 399px;
+}
+
+.estilo_tattoo_nestilo{
+    opacity: 0;
+    width: 300px;
+}
+
+#range {
+    width: 90%;
+    margin-top: 20px;
+}
+
+.informacoes_novidade {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.div_novo_estilo{
+    text-align: right;
+}

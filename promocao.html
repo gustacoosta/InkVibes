@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoção</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script>
+        function piscar(){
+            var f = document.getElementById('preco_promocao');
+            setInterval(function(){
+                f.style.visibility = (f.style.visibility == 'hidden' ? '' :'hidden');
+            }, 150);
+        }
+    </script>
+</head>
+<body onload="piscar();">
+    <div class="promocao">
+        <img src="assets/img/promocao_tt.jpg" class="img_promocao">
+        <p class="txt_promocao">
+            VENHA FAZER SUA TATTOO! <br>
+            Tatuagens a partir de
+        </p>
+        <p class="preco_promocao" id="preco_promocao">R$200,00</p>
+    </div>
+</body>
+</html>

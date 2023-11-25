@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ink Vibes</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="assets/img/logoIV.ico" type="image/x-icon">
+    <script>
+        var win = null;
+        function popPromocao(){
+            pagina = 'promocao.html'
+            var left = (window.innerWidth - 400)/2;
+            var top =(window.innerHeight - 520)/2;
+            settings = 'toolbar=no, location=no, directories=no, status=no,  menubar=no, width=400, height=520, left='+left+',top='+top+'scrollbars=no, resizablebars=no'
+            win = window.open(pagina,'OFERTA RELAMPAGO', settings)
+        }
+
+        function Novidade() {
+            pagina="novoestilo.html"
+            var left = (window.innerWidth - 500)/2;
+            var top =(window.innerHeight - 620)/2;
+            settings = 'toolbar=no, location=no, directories=no, status=no,  menubar=no, width=500, height=620, left='+left+',top='+top+'scrollbars=no, resizablebars=no'
+            win = window.open(pagina, "NOVIDADE", settings);
+        }
+    </script>
+</head>
+<body onload="JavaScript:popPromocao();">
+    <!--Header-->
+    <header>
+        <div class="logo_caixa">
+            <img class="logo" src="assets/img/InkVibes.png" title="Logo Ink Vibes" width="300">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tatuadores.html">tatuagens</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Main - Conteúdo do corpo da página-->
+    <main>
+        <section>
+            <h1 class="t_tatuador"><img src="assets/img/pistola_icone.png" class="pistola"> Tatuagens</h1>
+            <p class="info">Veja abaixo os estilos de tatuagem.</p>
+        </section>
+        <section class="style_tattoo">
+            <div class="div_tattoo">
+                <h3 id="titulo-h3">BLACKWORK</h3>
+                <img class="estilo_tattoo" src="assets/img/blackwork.png" alt="">
+                <p class="prt"> A partir de </p>
+                <p class="prt1"><strong>R$ 400,00</strong></p>
+            </div>
+            <div class="div_tattoo">
+                <h3 id="titulo-h3">SINGLE LINE</h3>
+                <img class="estilo_tattoo" src="assets/img/single line.png" alt="">
+                <p class="prt"> A partir de </p>
+                <p class="prt1"><strong>R$ 350,00</strong></p>
+            </div>
+            <div class="div_tattoo">
+                <h3 id="titulo-h3">REALISTA</h3>
+                <img class="estilo_tattoo" src="assets/img/realsita.png" alt="">
+                <p class="prt"> A partir de </p>
+                <p class="prt1"><strong>R$ 450,00</strong></p>
+            </div>
+        </section>
+        <p class="info" id="obs">*Os valores podem sofrer alteração dependendo do tamanho e do tatuador escolhido.</p>
+        <div class="div_novo_estilo">
+            <a href="JavaScript: Novidade();"><img src="assets/img/botao_tattoo.png" class="novo_estilo_btn"></a>
+        </div>
+    </main>
+    <footer>
+        <img src="assets/img/InkVibesPNG.png" alt="Ink Vibes" class="logo_footer">
+        <p class="copyright">&copy; Copyright - Todos os direitos reservados a Ink Vibes</p>
+    </footer>
+</body>
+</html>
